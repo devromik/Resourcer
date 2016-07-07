@@ -12,8 +12,18 @@
     <packaging>jar</packaging>
 
     <properties>
+        <!-- ***** Lang. ***** -->
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.0.2</kotlin.version>
+
+        <!-- ***** General-purpose libraries. ***** -->
+
+        <commons-lang3.version>3.4</commons-lang3.version>
+
+        <!-- ***** JSON. ***** -->
+
+        <jackson.version>2.7.5</jackson.version>
 
         <!-- ***** Testing. ***** -->
 
@@ -21,10 +31,28 @@
     </properties>
 
     <dependencies>
+        <!-- ***** Lang. ***** -->
+
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
             <version>${kotlin.version}</version>
+        </dependency>
+
+        <!-- ***** General-purpose libraries. ***** -->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+
+        <!-- ***** JSON. ***** -->
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <!-- ***** Testing. ***** -->
